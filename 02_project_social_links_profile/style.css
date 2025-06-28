@@ -1,0 +1,133 @@
+/* ------------------- */
+/*  STYLE GUIDE VARS   */
+/* ------------------- */
+:root {
+    /* Colors */
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);  /* Button Background */
+    --grey-800: hsl(0, 0%, 12%);  /* Card Background */
+    --grey-900: hsl(0, 0%, 8%);   /* Page Background */
+  
+    /* Typography */
+    --font-family: 'Inter', sans-serif;
+    --fw-regular: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+  }
+  
+  /* ------------------- */
+  /*  RESET E GLOBALS    */
+  /* ------------------- */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--grey-900);
+    font-family: var(--font-family);
+    font-size: 14px; /* Dimensione base da Style Guide */
+    color: var(--white);
+    font-weight: var(--fw-regular); /* Peso 400 di default */
+    
+    /* Centra il contenuto nella pagina */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+  }
+  
+  /* ------------------- */
+  /*    PROFILE CARD     */
+  /* ------------------- */
+  .profile-card {
+    background-color: var(--grey-800);
+    padding: 24px; /* Padding per layout mobile (e.g., 375px) */
+    border-radius: 12px;
+    width: 100%;
+    max-width: 384px;
+    text-align: center;
+  }
+  
+  .profile-avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+  }
+  
+  .profile-info h1 {
+    font-size: 1.5rem; /* 24px */
+    font-weight: var(--fw-semibold); /* Peso 600 */
+    margin-bottom: 8px;
+  }
+  
+  .profile-info .location {
+    color: var(--green);
+    font-weight: var(--fw-bold); /* Peso 700 */
+    font-size: 0.9rem; 
+  }
+  
+  .bio {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  
+  /* ------------------- */
+  /*    SOCIAL LINKS     */
+  /* ------------------- */
+  .social-links {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .social-links a {
+    display: block;
+    background-color: var(--grey-700);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: var(--fw-bold); /* Peso 700 */
+    padding: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    background-color: var(--green);
+    color: var(--grey-900); /* Testo scuro per contrasto su sfondo verde */
+  }
+  
+  /* ------------------- */
+  /*      ATTRIBUTION    */
+  /* ------------------- */
+  .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 2rem;
+    color: hsl(0, 0%, 70%); /* Leggermente meno brillante per non distrarre */
+  }
+  
+  .attribution a { 
+    color: var(--white); 
+    text-decoration: none;
+  }
+  .attribution a:hover {
+    color: var(--green);
+  }
+  
+  /* ------------------- */
+  /*    MEDIA QUERY      */
+  /* ------------------- */
+  @media (min-width: 768px) {
+    /* Aumenta il padding su schermi più grandi come da design desktop */
+    .profile-card {
+      padding: 40px;
+    }
+  }

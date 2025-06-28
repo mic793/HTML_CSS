@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="error.css">
+</head>
+<body>
+
+  <main class="container">
+    <div class="card">
+      <header class="card__logo">
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M23.999 8.018v8.016l-7.984 3.968-8.016-3.984V8.034l7.984-3.968L24 8.018ZM8.015 12.02l4.008 2.008v3.96L4 16.018v-3.984l4.015-.014Zm8.016 0l3.968-2.008L12.023 6 8.015 8.034 12.023 10l4.008 2.02Z" fill="#FFA57B"/></svg>
+        <span>Coding Conf</span>
+      </header>
+
+      <div class="form-view">
+        <h1 class="form-view__heading">Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <p class="form-view__subheading">Secure your spot at next year's biggest coding conference.</p>
+
+        <form action="#" class="form" novalidate>
+          <div class="form-group">
+            <label for="avatar-upload">Upload Avatar</label>
+            <div class="dropzone" id="dropzone">
+              <input type="file" id="avatar-upload" hidden accept="image/png, image/jpeg">
+              <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M.25.25h39.5v39.5H.25z"/><g transform="translate(4.25 7.25)" stroke="#FFA57B" stroke-width="2"><path d="M2.083 17.5h27.084C30.62 17.5 31.5 18.38 31.5 19.833v2.813C31.5 24.099 30.62 25 29.583 25H2.083C.947 25 0 24.099 0 22.646v-2.813C0 18.38.947 17.5 2.083 17.5z"/><path d="m15.75 17.5-6.25-6.25m6.25-8.75v15" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.75 17.5 22 11.25" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg>
+              <span>Drag and drop or click to upload</span>
+            </div>
+            <!-- Testo di errore per l'upload -->
+            <p class="error-text">
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0Zm0 14.5a6.5 6.5 0 1 1 0-13a6.5 6.5 0 0 1 0 13ZM7.25 4h1.5v5h-1.5V4Zm0 6.5h1.5v1.5h-1.5v-1.5Z" fill="currentColor" fill-rule="nonzero"/></svg>
+              File too large. Please upload a photo under 500KB.
+            </p>
+          </div>
+          
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <!-- Aggiunta la classe "input-error" per il bordo rosso -->
+            <input type="email" id="email" name="email" placeholder="example@email.com" required class="input-error">
+            <!-- Testo di errore per l'email -->
+            <p class="error-text">
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0Zm0 14.5a6.5 6.5 0 1 1 0-13a6.5 6.5 0 0 1 0 13ZM7.25 4h1.5v5h-1.5V4Zm0 6.5h1.5v1.5h-1.5v-1.5Z" fill="currentColor" fill-rule="nonzero"/></svg>
+              Please enter a valid email address.
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label for="github">GitHub Username</label>
+            <input type="text" id="github" name="github" placeholder="@yourusername" required>
+          </div>
+          
+          <button type="submit" class="button">Generate My Ticket</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+
+</body>
+</html>

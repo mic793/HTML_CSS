@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon non è cambiata, quindi il codice rimane lo stesso -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+  
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <div class="card">
+      <header class="card__logo">
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M23.999 8.018v8.016l-7.984 3.968-8.016-3.984V8.034l7.984-3.968L24 8.018ZM8.015 12.02l4.008 2.008v3.96L4 16.018v-3.984l4.015-.014Zm8.016 0l3.968-2.008L12.023 6 8.015 8.034 12.023 10l4.008 2.02Z" fill="#FFA57B"/></svg>
+        <span>Coding Conf</span>
+      </header>
+
+      <div class="success-view">
+        <h1 class="success-view__heading">Congrats, <span class="highlight">Jonatan Kristof</span>! Your ticket is ready.</h1>
+        <p class="success-view__message">
+          We've emailed your ticket to
+          <span class="highlight-email">jonatan@email.com</span> and will send updates in
+          the run up to the event.
+        </p>
+
+        <div class="ticket">
+          <div class="ticket__content">
+            <div class="ticket__header">
+              <div class="ticket__logo">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M23.999 8.018v8.016l-7.984 3.968-8.016-3.984V8.034l7.984-3.968L24 8.018ZM8.015 12.02l4.008 2.008v3.96L4 16.018v-3.984l4.015-.014Zm8.016 0l3.968-2.008L12.023 6 8.015 8.034 12.023 10l4.008 2.02Z" fill="#FFA57B"/></svg>
+                <span>Coding Conf</span>
+              </div>
+              <p class="ticket__details">Jan 31, 2025 / Austin, TX</p>
+            </div>
+            <div class="ticket__user">
+              <!-- Avatar aggiornato con la nuova immagine -->
+              <img class="ticket__avatar" src="./images/image-avatar.jpg">
+              <div class="ticket__user-info">
+                <p class="ticket__name">Jonatan Kristof</p>
+                <p class="ticket__github">
+                  <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.67.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z" fill="#fff" fill-rule="nonzero"/></svg>
+                  @jonatankristof0101
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="ticket__divider">
+            <div class="ticket__number">#01609</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="decoration decoration--dots-top-left"></div>
+  <div class="decoration decoration--dots-mid-left"></div>
+  <div class="decoration decoration--wave-bottom-right"></div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Elena Conti</a>.
+  </footer>
+</body>
+</html>
