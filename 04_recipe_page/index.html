@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ricetta semplice per preparare un'omelette perfetta in soli 10 minuti. Include ingredienti, istruzioni dettagliate e informazioni nutrizionali.">
+  <meta name="keywords" content="omelette, ricetta, uova, cucina, facile, veloce">
+  <meta name="author" content="Elena Conti">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Ricetta Omelette Semplice - Frontend Mentor">
+  <meta property="og:description" content="Una ricetta facile e veloce per preparare un'omelette deliziosa in soli 10 minuti.">
+  <meta property="og:image" content="./images/image-omelette.jpeg">
+  <meta property="og:type" content="article">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Ricetta Omelette Semplice | Frontend Mentor</title>
+
+  <!-- Preconnect per migliorare le performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Google Fonts con display=swap per evitare FOIT -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif:wght@400&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Schema.org structured data per ricette -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": "Simple Omelette Recipe",
+    "description": "An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.",
+    "prepTime": "PT5M",
+    "cookTime": "PT5M",
+    "totalTime": "PT10M",
+    "recipeYield": "1 serving",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "277 kcal",
+      "carbohydrateContent": "0g",
+      "proteinContent": "20g",
+      "fatContent": "22g"
+    },
+    "recipeIngredient": [
+      "2-3 large eggs",
+      "Salt, to taste",
+      "Pepper, to taste",
+      "1 tablespoon of butter or oil",
+      "Optional fillings: cheese, diced vegetables, cooked meats, herbs"
+    ],
+    "recipeInstructions": [
+      {
+        "@type": "HowToStep",
+        "text": "In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture."
+      },
+      {
+        "@type": "HowToStep", 
+        "text": "Place a non-stick frying pan over medium heat and add butter or oil."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Serve hot, with additional salt and pepper if needed."
+      }
+    ],
+    "image": "./images/image-omelette.jpeg"
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip to main content per accessibilità -->
+  <a href="#main-content" class="skip-link">Salta al contenuto principale</a>
+
+  <main id="main-content" class="recipe-card" role="main">
+    <article itemscope itemtype="https://schema.org/Recipe">
+      <header class="recipe-header">
+        <img 
+          src="./images/image-omelette.jpeg" 
+          alt="Un'omelette ripiena di spinaci, funghi e altre verdure servita su un piatto bianco" 
+          class="recipe-image"
+          itemprop="image"
+          loading="lazy"
+          width="736"
+          height="300">
+      </header>
+
+      <div class="recipe-content">
+        <h1 class="recipe-title" itemprop="name">Simple Omelette Recipe</h1>
+
+        <p class="recipe-description" itemprop="description">
+          An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+          to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+        </p>
+
+        <aside class="prep-time-box" role="complementary" aria-labelledby="prep-time-heading">
+          <h3 id="prep-time-heading">Preparation time</h3>
+          <ul class="prep-time-list" role="list">
+            <li><strong>Total:</strong> <time itemprop="totalTime" datetime="PT10M">Approximately 10 minutes</time></li>
+            <li><strong>Preparation:</strong> <time itemprop="prepTime" datetime="PT5M">5 minutes</time></li>
+            <li><strong>Cooking:</strong> <time itemprop="cookTime" datetime="PT5M">5 minutes</time></li>
+          </ul>
+        </aside>
+
+        <section class="recipe-section" aria-labelledby="ingredients-heading">
+          <h2 id="ingredients-heading">Ingredients</h2>
+          <ul role="list" itemprop="recipeIngredient">
+            <li itemprop="recipeIngredient">2-3 large eggs</li>
+            <li itemprop="recipeIngredient">Salt, to taste</li>
+            <li itemprop="recipeIngredient">Pepper, to taste</li>
+            <li itemprop="recipeIngredient">1 tablespoon of butter or oil</li>
+            <li itemprop="recipeIngredient">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+          </ul>
+        </section>
+
+        <hr role="separator" aria-hidden="true">
+
+        <section class="recipe-section" aria-labelledby="instructions-heading">
+          <h2 id="instructions-heading">Instructions</h2>
+          <ol role="list" itemprop="recipeInstructions">
+            <li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep">
+              <span itemprop="text"><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</span>
+            </li>
+            <li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep">
+              <span itemprop="text"><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</span>
+            </li>
+            <li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep">
+              <span itemprop="text"><strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</span>
+            </li>
+            <li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep">
+              <span itemprop="text"><strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</span>
+            </li>
+            <li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep">
+              <span itemprop="text"><strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</span>
+            </li>
+            <li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep">
+              <span itemprop="text"><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</span>
+            </li>
+          </ol>
+        </section>
+
+        <hr role="separator" aria-hidden="true">
+
+        <section class="recipe-section" aria-labelledby="nutrition-heading">
+          <h2 id="nutrition-heading">Nutrition</h2>
+          <p>The table below shows nutritional values per serving without the additional fillings.</p>
+          <div class="table-container" role="region" aria-labelledby="nutrition-heading" tabindex="0">
+            <table class="nutrition-table" itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation">
+              <caption class="sr-only">Nutritional information per serving</caption>
+              <tbody>
+                <tr>
+                  <td>Calories</td>
+                  <td itemprop="calories">277kcal</td>
+                </tr>
+                <tr>
+                  <td>Carbs</td>
+                  <td itemprop="carbohydrateContent">0g</td>
+                </tr>
+                <tr>
+                  <td>Protein</td>
+                  <td itemprop="proteinContent">20g</td>
+                </tr>
+                <tr>
+                  <td>Fat</td>
+                  <td itemprop="fatContent">22g</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+  
+  <footer class="attribution" role="contentinfo">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
+      Coded by <a href="#" rel="noopener noreferrer">Elena Conti's Home Page</a>.
+    </p>
+  </footer>
+
+  <style>
+  /* Skip link per accessibilità */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--color-brown-800);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1000;
+  }
+  
+  .skip-link:focus {
+    top: 6px;
+  }
+  
+  /* Screen reader only content */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  /* Table container per scroll orizzontale su mobile */
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .table-container:focus {
+    outline: 2px solid var(--color-brown-800);
+    outline-offset: 2px;
+  }
+  </style>
+</body>
+</html>
